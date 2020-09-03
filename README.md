@@ -17,3 +17,7 @@ No extension settings.
 ## Known Issues
 
 There is not much testing, so there may be problems.
+
+## Development
+
+To create vsix, you must have vsce installed (`npm install -g vsce`). You can then run `vsce package`. Install locally with `code --install-extension flattensql-0.0.1.vsix`
