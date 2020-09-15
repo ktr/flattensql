@@ -3,7 +3,7 @@
 	"publisher": "ktr",
 	"displayName": "flattensql",
 	"description": "Convert SQL to single line and copy to clipboard.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.48.0"
 	},

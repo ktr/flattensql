@@ -39,13 +39,10 @@ export function activate(context: vscode.ExtensionContext) {
     } else {
       const
         doc = editor.document,
-        lang = doc.languageId
-      if (lang === 'sql') {
-        const sql = flattenSQL(...getText(editor))
-        vscode.env.clipboard.writeText(sql)
-          .then(() => msg('Flattened SQL, copied to clipboard!'))
-      }
-      else { msg("Not editing a SQL file - can't flatten SQL") }
+        lang = doc.languageId // sql?
+      const sql = flattenSQL(...getText(editor))
+      vscode.env.clipboard.writeText(sql)
+        .then(() => msg('Flattened SQL, copied to clipboard!'))
     }
   });
 
